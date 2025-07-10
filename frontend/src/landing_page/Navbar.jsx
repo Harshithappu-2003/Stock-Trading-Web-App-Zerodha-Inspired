@@ -1,18 +1,20 @@
 import React from "react";
+import {Link} from "react-router-dom";
+
 
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg border-bottom bg-white shadow-sm sticky-top">
       <div className="container py-2">
         {/* Logo */}
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="/">
           <img
             src="media/images/logo.svg"
             alt="Zerodha Logo"
             className="img-fluid"
             style={{ maxWidth: "130px" }}
           />
-        </a>
+        </Link>
 
         {/* Hamburger Toggle Button */}
         <button
@@ -31,19 +33,19 @@ function Navbar() {
         <div className="collapse navbar-collapse justify-content-end" id="navbarMenu">
           <ul className="navbar-nav gap-3">
             <li className="nav-item">
-              <a className="nav-link" href="#">Signup</a>
+              <Link  className="nav-link" to="/signup">Signup</Link >
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">About</a>
+              <Link  className="nav-link" to="/about">About</Link >
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Product</a>
+              <Link className="nav-link" to="/products">Product</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Pricing</a>
+              <Link className="nav-link" to="/pricing">Pricing</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Support</a>
+              <Link className="nav-link" to="/support">Support</Link>
             </li>
           </ul>
         </div>
