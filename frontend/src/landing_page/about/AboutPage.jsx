@@ -1,11 +1,15 @@
 import React from "react";
 
-function AboutPage() {
+import Hero from "./Hero";
+import Team from "./Team";
+
+function PricingPage() {
   return (
-    <div className="container text-center mt-5">
-      <h1>About Page Loaded ✅</h1>
-    </div>
+    <>
+      <Hero />
+      <Team />
+    </>
   );
 }
 
-export default AboutPage;
+export default PricingPage;
