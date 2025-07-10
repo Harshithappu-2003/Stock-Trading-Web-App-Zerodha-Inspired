@@ -1,11 +1,16 @@
 import React from "react";
 
-function SupportPage() {
+import Hero from "./Hero";
+import CreateTicket from "./CreateTicket";
+
+
+function PricingPage() {
   return (
-    <div className="container text-center mt-5">
-      <h1>Support Page Loaded ✅</h1>
-    </div>
+    <>
+      <Hero />
+      <CreateTicket />
+    </>
   );
 }
 
-export default SupportPage;
+export default PricingPage;
